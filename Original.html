@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamaraj School</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            width: 100%;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+            flex: 1;
+        }
+        .left {
+            flex: 50%;
+            padding: 20px;
+            background-color: skyblue;
+        }
+        .right {
+            flex:50%;
+            padding: 0px;
+            background-color:white;
+        }
+        .dropdown {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        footer {
+            margin-top: auto;
+        }
+.parent {
+    overflow: visible; 
+}
+.right-section {
+    position: relative;
+    z-index: 10;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kamaraj Matriculation Higher Secondary School</h1>
+    </header>
+    <div class="container">
+        <div class="left">
+            <select class="dropdown" id="dropdown" onchange="showContent()">
+                <option value="">Select an option</option>
+                <option value="Management">Management</option>
+                <option value="Courses">Courses</option>
+                <option value="Contact">Contact</option>
+            </select>
+<center><h3> Our History</h3></center>
+<img src="file:///e:/tharan/logo-sq.jpg">
+<p>Thiru K. Kamaraj the mighty name in the field of education and the one who brought it to the door - steps of the rural kids, beautifies our school name. The need for the English language prompted the local people of this area impelled us to start a good, well disciplined and well managed school. With their kind hearted co-operation and excellent encouragement, the sponsors with great far sight founded " Kamaraj Nursery School" with the lofty ideals of imparting the best education to all children, keeping in view of the three language formula.</p><br>
+<img src="file:///E:/tharan/img1.jpg">
+<p>The School from kindergarten to Std V with 250 Students on roll 12 staff was auspiciously inaugurated on 21st June, 1982 by the gold touch of Amarar Thiru C. CHIDAMBARA NADAR, president of the NUS Kovilpatti, at Chekkadi Street, Kovilpatti. Thiru N.SRINIVASAN B.E., took over as the first Correspondent. Later, due to want of accomodation, in Feb.1984 it was shifted to Govt. Offices Street in a rented building. First recognition for opening a New Matriculation School in the name of Kamaraj Matriculation School was granted in 1986.</p>
+<img src="file:///E:/tharan/img2.jpg">
+<p>The new building, housing high school and higher secondary classes was inaugurated in Feb 1990. The School enjoys an ennoble serene atmosphere in idyllic surrounding away from the din and bustle of the matchless city of matches.</p>
+
+<p>The School was upgraded into a Higher secondary School in the year 1991-92. In the year 1994, primary classes were started in the new building. The growth has been phenomenal under the dynamic management constituted by Mr.A.S.V.C.M.SenthilkaniRajaa as a secretary from the academic year 2015 - 16. The strength of the pupils and that of the teaching staff have been shooting up year by year.</p>
+
+
+
+<h4>Glorious Achievement:</h4>
+
+<p>Our School stands on the peak at kovilpatti by producing excellent results in the SSLC. Exams and Hr.Sec. Exams consecutively. Our students have fulfilled our management's dream with a glorious achievement. For this our Kovilpatti Nadar Uravinmurai Sangam and our Management congratulated the students Every year our school management motivates the Meritorious students by awarding memorable prizes. Our school has been the Centre for the Govt. Public Exams for Matriculation from 1992-1993 and Hr Sec.Public Exam from 2017-2018.</p>
+
+        </div>
+        <div class="right" id="content">
+            <!-- Content will be displayed here -->
+        </div>
+    </div>
+    <footer>
+<marquee direction="right"><h3>KMHSS</h3></marquee>
+        <br> All rights reserved.<br>
+    </footer>
+<script>
+function showContent() {
+    var dropdown = document.getElementById("dropdown");
+    var content = document.getElementById("content");
+    var selectedValue = dropdown.value;
+
+    if (selectedValue === "Management") {
+        content.innerHTML = `
+            <h1 style="text-align:center;">Management</h1>
+            <p>Kamaraj Matriculation Higher Secondary School Kovilpatti, is one of the schools run by Kovilpatti Nadar Uravinmurai Sangam. Kovilpatti Nadar Uravinmurai Sangam Trustees are leading figures in Education, Business, and Entrepreneurship. They are committed to the vision and aspirations of the school and provide continuing support to the educational processes of the school. The members focus on: Establishing school goals and aspirations, Providing for infrastructural and program development initiatives, Overseeing the financial affairs of the school and Adopting operating policies.</p>
+            <img src='file:///e:/tharan/logo-sq.jpg' alt='Tharan' style='display:block; margin:auto; width:25%; height:auto;'>
+            <h2 style="text-align:center;">2021 Management Committee</h2>
+            <p>Kamaraj Matriculation Higher Secondary School Committee - Phone: 223107, 228972</p>
+            <ul>
+                <li>Mr. A.P.K. Palaniselvam, President</li>
+                <li>Mr. A.S.V.C.M. Senthilkaniraja, Secretary</li>
+                <li>Mr. A. Selvam (Advocate), Treasurer</li>
+                <li>Members</li>
+                <li>Mr. M. Ganesamoorthy</li>
+                <li>Mr. I. Ravi Manickam</li>
+                <li>Mr. J. Samirajan</li>
+                <li>Mr. A.K.S.S. Neethirajan</li>
+                <li>Mr. P. Valluvan</li>
+                <li>Mr. A. Kannan</li>
+                <li>Mr. T. Selvaraj</li>
+            </ul>
+        `;
+    } else if (selectedValue === "Courses") {
+        content.innerHTML = `
+            <h1 style="text-align:center;">Courses</h1>
+            <h2>Our Curriculum</h2>
+<ul>          
+  <li>Kamaraj's Syllabus is focused only on linguistic, logical, mathematical intelligence and wisdom to be a worthy citizen.</li>
+            <li>Pre-KG, LKG, UKG, aims at the holistic development of the child across four domains: physical, cognitive, social, and emotional.</li>
+            <li>Pre-KG to V with amenities for the growth of 5 motor skills.</li>
+            <li>I to V std following syllabus based on NEP 2020 which helps to hone their listening and speaking skills.</li>
+            <li>Stds VI to X the school follows Samacheerkalvi (Equitable Syllabus) of the stateboard.</li>
+            <li>General studies, life skills, and computer education are given to the students.</li>
+            <li>Medium of instruction is English.</li>
+            <li>XI & XII std Stateboard syllabus equal to NCERT.</li>
+</ul>        
+    <h2>Courses Offered for XI & XII</h2>
+            <p>Part I: Tamil</p>
+            <p>Part II: English</p>
+            <p>Part III: General Education</p>
+            <p>Part I & Part II are compulsory</p>
+            <p>The following combinations of subjects are offered:</p>
+            <ul>
+                <li>Computer Science: Tamil, English, Physics, Chemistry, Computer Science, Mathematics</li>
+                <li>Biology: Tamil, English, Physics, Chemistry, Biology, Mathematics</li>
+                <li>Microbiology: Tamil, English, Physics, Chemistry, Biology, Microbiology</li>
+                <li>Commerce with Business Maths: Tamil, English, Business Maths, Commerce, Economics, Accountancy</li>
+                <li>Commerce with Computer Applications: Tamil, English, Computer Applications, Commerce, Economics, Accountancy</li>
+            </ul>
+        `;
+    } else if (selectedValue === "Contact") {
+        content.innerHTML = `
+            <h1 style="text-align:center;">Contact</h1>
+            <h2>Contact Us</h2>
+            <p>Address: Pasuvanthanai Road, Kovilpatti - 628501, Tuticorin District, Tamilnadu, India</p>
+            <p>Email: kmhssschool@gmail.com, kmhss_1982@yahoo.co.in</p>
+            <p>Phone: +91-74027-17829, +91-78457-67367</p>
+            <h3>Our School</h3>
+            <p>Spacious Classrooms, Modern Facilities, and a Conducive Learning Environment.</p>
+        `;
+    }
+}
+</script>
+</body>
+</html>
