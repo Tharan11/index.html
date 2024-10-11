@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamaraj School</title>
+    <style>
+.container {
+    display: flex;
+}
+
+.menu {
+    width: 200px;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+}
+
+.menu button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.content-item {
+    display: none;
+}
+
+.content-item.active {
+    display: block;
+}
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            width: 100%;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+        }
+        .header img {
+            width: 15px; /* Adjust the size as needed */
+             height: auto; /* Maintain aspect ratio */
+            margin-right: 10px; /* Space between image and text */
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px; /* Adjust the font size as needed */
+         }
+        .container {
+            display: flex;
+            width: 100%;
+            flex: 1;
+        }
+        .left {
+            flex: 50%;
+            padding: 20px;
+            background-color: skyblue;
+        }
+        .right {
+            flex:50%;
+            padding: 0px;
+            background-color:white;
+        }
+   footer {
+            margin-top: auto;
+        }
+.parent {
+    overflow: visible; 
+}
+.right-section {
+    position: relative;
+    z-index: 10;
+}
+.header-img {
+    height: 2em; /* This sets the height of the image to match the font size */
+    vertical-align: middle; /* This aligns the image vertically in the middle of the text */
+}
+#content6 {
+        text-align: left !important; /* Overrides other styles */
+    }
+    </style>
+</head>
+<body>
+ <header>
+    <h1>
+        <img src="https://www.kamarajschool.org/assets/images/logo-sq.png" alt="Kamaraj School Logo" class="header-img">
+        Kamaraj Matriculation Higher Secondary School
+        <img src="E:\Website\download-removebg-preview.png" alt="Kamarajar Image" class="header-img">
+    </h1>
+</header>
+
+  <div class="container">
+        <div class="menu">
+            <button onclick="showContent('content1')">History</button>
+            <button onclick="showContent('content2')">Courses</button>
+            <button onclick="showContent('content3')">Events</button>
+            <button onclick="showContent('content4')">Management</button>
+            <button onclick="showContent('content5')">Achievements</button>  
+            <button onclick="showContent('content6')">Contact</button>
+        </div>
+        <div class="content">
+            <div id="content1" class="content-item"> 
+       <center><h3> Our History</h3></center>
+
+        <img src="https://www.kamarajschool.org/assets/images/logo-sq.png" alt="Kamaraj School Logo" width="200" height="200">
+<p>Thiru K. Kamaraj the mighty name in the field of education and the one who brought it to the door - steps of the rural kids, beautifies our school name. The need for the English language prompted the local people of this area impelled us to start a good, well disciplined and well managed school. With their kind hearted co-operation and excellent encouragement, the sponsors with great far sight founded " Kamaraj Nursery School" with the lofty ideals of imparting the best education to all children, keeping in view of the three language formula.</p><br><br>
+<img src="https://www.kamarajschool.org/assets/images/history/img1.jpg" alt="Kamaraj School History Image" width="300" height="200">
+<p>The School from kindergarten to Std V with 250 Students on roll 12 staff was auspiciously inaugurated on 21st June, 1982 by the gold touch of Amarar Thiru C. CHIDAMBARA NADAR, president of the NUS Kovilpatti, at Chekkadi Street, Kovilpatti. Thiru N.SRINIVASAN B.E., took over as the first Correspondent. Later, due to want of accomodation, in Feb.1984 it was shifted to Govt. Offices Street in a rented building. First recognition for opening a New Matriculation School in the name of Kamaraj Matriculation School was granted in 1986.</p><br><br>
+<img src="https://www.kamarajschool.org/assets/images/history/img2.jpg" alt="Kamaraj School Photo">
+<p>The new building, housing high school and higher secondary classes was inaugurated in Feb 1990. The School enjoys an ennoble serene atmosphere in idyllic surrounding away from the din and bustle of the matchless city of matches.</p><br><br>
+<p>The School was upgraded into a Higher secondary School in the year 1991-92. In the year 1994, primary classes were started in the new building. The growth has been phenomenal under the dynamic management constituted by Mr.A.S.V.C.M.SenthilkaniRajaa as a secretary from the academic year 2015 - 16. The strength of the pupils and that of the teaching staff have been shooting up year by year.</p><br><br>
+
+
+
+<h4>Glorious Achievement:</h4>
+<p>Our School stands on the peak at kovilpatti by producing excellent results in the SSLC. Exams and Hr.Sec. Exams consecutively. Our students have fulfilled our management's dream with a glorious achievement. For this our Kovilpatti Nadar Uravinmurai Sangam and our Management congratulated the students Every year our school management motivates the Meritorious students by awarding memorable prizes. Our school has been the Centre for the Govt. Public Exams for Matriculation from 1992-1993 and Hr Sec.Public Exam from 2017-2018.</p><br><br>
+  </div>
+            <div id="content2" class="content-item">
+            <h1 style="text-align:center;">Courses</h1>
+            <h2>Our Curriculum</h2>
+            <ul>          
+                <li>Kamaraj's Syllabus is focused only on linguistic, logical, mathematical intelligence and wisdom to be a worthy citizen.</li>
+                <li>Pre-KG, LKG, UKG, aims at the holistic development of the child across four domains: physical, cognitive, social, and emotional.</li>
+                <li>Pre-KG to V with amenities for the growth of 5 motor skills.</li>
+                <li>I to V std following syllabus based on NEP 2020 which helps to hone their listening and speaking skills.</li>
+                <li>Stds VI to X the school follows Samacheerkalvi (Equitable Syllabus) of the stateboard.</li>
+                <li>General studies, life skills, and computer education are given to the students.</li>
+                <li>Medium of instruction is English.</li>
+                <li>XI & XII std Stateboard syllabus equal to NCERT.</li>
+            </ul>        
+            <h2>Courses Offered for XI & XII</h2>
+            <p>Part I: Tamil</p>
+            <p>Part II: English</p>
+            <p>Part III: General Education</p>
+            <p>Part I & Part II are compulsory</p>
+            <p>The following combinations of subjects are offered:</p>
+            <ul>
+                <li>Computer Science: Tamil, English, Physics, Chemistry, Computer Science, Mathematics</li>
+                <li>Biology: Tamil, English, Physics, Chemistry, Biology, Mathematics</li>
+                <li>Microbiology: Tamil, English, Physics, Chemistry, Biology, Microbiology</li>
+                <li>Commerce with Business Maths: Tamil, English, Business Maths, Commerce</li>
+            </ul>
+
+</div>
+            <div id="content3" class="content-item"><h3 text align=center> Teachers Day Celebration </h3></div>
+        </div>
+            <div id="content4" class="content-item">    <h1 text align=center>Management</h1>
+            <p>Kamaraj Matriculation Higher Secondary School Kovilpatti, is one of the schools run by Kovilpatti Nadar Uravinmurai Sangam. Kovilpatti Nadar Uravinmurai Sangam Trustees are leading figures in Education, Business, and Entrepreneurship. They are committed to the vision and aspirations of the school and provide continuing support to the educational processes of the school. The members focus on: Establishing school goals and aspirations, Providing for infrastructural and program development initiatives, Overseeing the financial affairs of the school and Adopting operating policies.</p>
+            <img src='E:/tharan/logo-sq.jpg' alt='Tharan' style='display:block; margin:auto; width:25%; height:auto;'>
+            <h2 style="text-align:center">2021 Management Committee</h2>
+            <p>Kamaraj Matriculation Higher Secondary School Committee - Phone: 223107, 228972</p>
+            <ul>
+                <li>Mr. A.P.K. Palaniselvam, President</li>
+                <li>Mr. A.S.V.C.M. Senthilkaniraja, Secretary</li>
+                <li>Mr. A. Selvam (Advocate), Treasurer</li>
+                <li>Members</li>
+                <li>Mr. M. Ganesamoorthy</li>
+                <li>Mr. I. Ravi Manickam</li>
+                <li>Mr. J. Samirajan</li>
+                <li>Mr. A.K.S.S. Neethirajan</li>
+                <li>Mr. P. Valluvan</li>
+                <li>Mr. A. Kannan</li>
+                <li>Mr. T. Selvaraj</li>
+            </ul>
+</div>
+<div id="content6" class="content-item">  
+                     <h2>Contact Information</h2>
+<p><b>Address:</b><br>
+Pasuvanthanai Road,<br>
+Kovilpatti - 628501.<br>
+Tuticorin District<br>
+Tamilnadu, India</p>
+<p><strong>Email:</strong><br>
+kmhssschool@gmail.com<br>
+kmhss_1982@yahoo.co.in</p>
+<p><strong>Phone:</strong><br>
++91-74027-17829<br>
++91-78457-67367<br>
++91-4632-223107</p>
+            </div>
+ <div class="content">
+            <div id="defaultContent" class="content-item active"><img src="https://www.kamarajschool.org/assets/images/logo1.png" alt="School Logo" align=middle></div>
+            <div id="content1" class="content-item">Content for Item 1</div>
+            <div id="content2" class="content-item">Content for Item 2</div>
+            <div id="content3" class="content-item">Content for Item 3</div>
+        </div>
+    </div>
+
+        </div>
+        <div class="right" id="content">
+          
+        </div>
+    </div>
+    <footer>
+<marquee direction="right"><h3>KMHSS</h3></marquee>
+    </footer>
+<script>
+function showContent(id) {
+    // Hide all content items
+    const contentItems = document.querySelectorAll('.content-item');
+    contentItems.forEach(item => item.classList.remove('active'));
+
+    // Show the selected content item
+    const selectedContent = document.getElementById(id);
+    selectedContent.classList.add('active');
+document.addEventListener('DOMContentLoaded', (event) => {
+    let selectedContent = document.getElementById('yourElementId'); // or use querySelector
+    if (selectedContent) {
+        selectedContent.classList.add('active');
+    } else {
+        console.error('Element with the specified ID not found.');
+    }
+});
+
+}
+</script>
+</body>
+</html>
